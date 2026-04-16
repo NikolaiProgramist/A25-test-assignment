@@ -1,0 +1,22 @@
+{
+    "name": "nikolai/a25-test-assignment",
+    "description": "Test assignment for A25",
+    "type": "project",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "symfony/var-dumper": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nikolai\\A25TestAssignment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NikolaiProgramist",
+            "email": "nikluk2005@mail.ru"
+        }
+    ],
+    "require": {}
+}
