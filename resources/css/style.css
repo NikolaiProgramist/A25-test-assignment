@@ -1,0 +1,129 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: azure;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+form {
+    padding: 10px;
+
+    width: 30%;
+
+    border: 2px solid #e3e6ea;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.form-button {
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 20px;
+
+    color: white;
+    background-color: royalblue;
+    border: 2px solid #1e00ff;
+    border-radius: 10px;
+
+    transition: background-color ease 300ms;
+}
+
+.form-button:hover {
+    background-color: #1e00ff;
+    transition: background-color ease 300ms;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.column {
+    padding: 10px;
+    width: 50%;
+}
+
+.evaluation {
+    display: flex;
+    gap: 6px;
+}
+
+.evaluation div {
+    display: flex;
+    width: 26%;
+}
+
+.evaluation label {
+    font-size: 18px;
+    color: black;
+}
+
+.evaluation input {
+    margin-left: 6px;
+}
+
+label {
+    display: block;
+    padding-bottom: 6px;
+
+    font-size: 24px;
+    color: royalblue;
+}
+
+input {
+    padding-left: 4px;
+
+    width: 100%;
+    height: 30px;
+
+    font-size: 16px;
+
+    border: 2px solid #e3e6ea;
+    border-radius: 10px;
+}
+
+select {
+    padding-left: 4px;
+
+    width: 100%;
+    height: 34px;
+
+    font-size: 16px;
+
+    border: 2px solid #e3e6ea;
+    border-radius: 10px;
+
+    transition: height ease 300ms;
+}
+
+select:hover {
+    cursor: pointer;
+    height: 70px;
+    transition: height ease 300ms;
+}
+
+span {
+    display: block;
+    padding-bottom: 6px;
+
+    font-size: 24px;
+    color: royalblue;
+}

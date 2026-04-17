@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задачи</title>
+    <link type="text/css" rel="stylesheet" href="/resources/css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="tasks.html" method="GET">
+                <div class="row">
+                    <div class="column">
+                        <label for="statuses">Статусы</label>
+
+                        <select name="statuses" id="statuses" required multiple>
+                            <option value="Беклог">Беклог</option>
+                            <option value="Открыт">Открыт</option>
+                            <option value="В работе">В работе</option>
+                            <option value="Закрыт">Закрыт</option>
+                        </select>
+                    </div>
+
+                    <div class="column">
+                        <label for="deadline">Дата дедлайна</label>
+                        <input type="date" name="deadline" id="deadline">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <span>Оценка</span>
+
+                        <div class="evaluation">
+                            <div>
+                                <label for="evaluationFrom">от:</label>
+                                <input type="number" name="evaluation_from" id="evaluationFrom">
+                            </div>
+
+                            <div>
+                                <label for="evaluationTo">до:</label>
+                                <input type="number" name="evaluation_to" id="evaluationTo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <label for="actualHours">Реальное кол-во часов</label>
+                        <input type="number" name="actual_hours" id="actualHours">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="form-button">Скачать</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
