@@ -18,5 +18,7 @@
             "email": "nikluk2005@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
 }
