@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Задачи</title>
-    <link type="text/css" rel="stylesheet" href="/resources/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/resources/css/tasks.css">
 </head>
 <body>
     <main>
         <section>
-            <form action="tasks.html" method="GET">
+            <div class="error">
+                <span class="error__text">Ошибка</span>
+            </div>
+
+            <form action="/api/tasks" method="GET">
                 <div class="row">
                     <div class="column">
-                        <label for="statuses">Статусы</label>
+                        <label for="statuses[]">Статусы</label>
 
-                        <select name="statuses" id="statuses" required multiple>
-                            <option value="Беклог">Беклог</option>
-                            <option value="Открыт">Открыт</option>
-                            <option value="В работе">В работе</option>
-                            <option value="Закрыт">Закрыт</option>
+                        <select name="statuses[]" id="statuses[]" required multiple>
+                            <option value="backlog">Беклог</option>
+                            <option value="open">Открыт</option>
+                            <option value="progress">В работе</option>
+                            <option value="closed">Закрыт</option>
                         </select>
                     </div>
 
                     <div class="column">
-                        <label for="deadline">Дата дедлайна</label>
-                        <input type="date" name="deadline" id="deadline">
+                        <label for="dueDate">Дата дедлайна</label>
+                        <input type="date" name="due_date" id="dueDate" required>
                     </div>
                 </div>
 
@@ -34,19 +38,19 @@
                         <div class="evaluation">
                             <div>
                                 <label for="evaluationFrom">от:</label>
-                                <input type="number" name="evaluation_from" id="evaluationFrom">
+                                <input type="number" name="evaluation_from" id="evaluationFrom" required>
                             </div>
 
                             <div>
                                 <label for="evaluationTo">до:</label>
-                                <input type="number" name="evaluation_to" id="evaluationTo">
+                                <input type="number" name="evaluation_to" id="evaluationTo" required>
                             </div>
                         </div>
                     </div>
 
                     <div class="column">
                         <label for="actualHours">Реальное кол-во часов</label>
-                        <input type="number" name="actual_hours" id="actualHours">
+                        <input type="number" name="actual_hours" id="actualHours" required>
                     </div>
                 </div>
 
@@ -56,5 +60,7 @@
             </form>
         </section>
     </main>
+
+    <script type="text/javascript" src="/resources/js/tasks.js"></script>
 </body>
 </html>

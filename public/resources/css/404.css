@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-style: normal;
+
+    background-color: azure;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+h1 {
+    color: royalblue;
+}
